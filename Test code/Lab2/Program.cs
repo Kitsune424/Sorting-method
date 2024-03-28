@@ -35,28 +35,21 @@ namespace Lab_02
                         case ConsoleKey.D1:
                         case ConsoleKey.NumPad1:// если нажата клавиша с цифрой 1
                             {
-                                ID = Sorting.ArrayID();
                                 Console.WriteLine("\nЗадайте размер массива:");
                                 int n = 0;
                                 bool n_t = int.TryParse(Console.ReadLine(), out n);
 
                                 if (n_t)
                                 {
-                                    if (n < 0)
-                                    {
-                                        Console.WriteLine("Размер массива не может быть равен нулю");
-                                    }
+                                    if (n < 0) { Console.WriteLine("Размер массива не может быть равен нулю"); }
                                     else
                                     {
-                                        
+                                        ID = Sorting.ArrayID();
                                         _array = Sorting.Input(n);
                                         break;
                                     }
                                 }
-                                else
-                                {
-                                    Console.WriteLine("неверный тип размера массива");
-                                }
+                                else { Console.WriteLine("неверный тип размера массива"); }
                                 break;
                             }
 

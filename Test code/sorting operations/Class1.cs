@@ -45,6 +45,10 @@ namespace Sortingoperations_library
             return s;
         }
 
+        /// <summary>
+        /// метод присваивания уникального ID
+        /// </summary>
+        /// <returns></returns>
         public static int ArrayID()
         {
             int ID = 0;
