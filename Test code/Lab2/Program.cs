@@ -44,6 +44,8 @@ namespace Lab_02
                                     if (n < 0) { Console.WriteLine("Размер массива не может быть равен нулю"); }
                                     else
                                     {
+                                        /*Вводится система ID для отслеживания принадлежности
+                                         отсортированного массива к исходному*/
                                         ID = Sorting.ArrayID();
                                         _array = Sorting.Input(n);
                                         break;
